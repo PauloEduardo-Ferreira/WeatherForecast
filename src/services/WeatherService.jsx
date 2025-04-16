@@ -21,7 +21,7 @@ export const getWeatherData = async (city) => {
     const { lat, lon } = geoData.coord;
 
     // Chamada à API de previsão do tempo usando as coordenadas obtidas
-    const weatherResponse = await axios.get(`weather?key=3a58d46f&lat=${lat}&lon=${lon}&user_ip=remote`);
+    const weatherResponse = await axios.get(`weather?key=c6e05307&lat=${lat}&lon=${lon}&user_ip=remote`);
     const weatherInfo = weatherResponse.data.results; // Armazena a resposta da API de previsão
 
     // Verifica se as informações do clima foram retornadas corretamente
