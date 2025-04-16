@@ -1,0 +1,100 @@
+.weather-info {
+    background-color: #ffffff; /* Cor de fundo mais clara */
+    border: 1px solid #e0e0e0; /* Borda mais suave */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    padding: 15px; /* Aumenta o espaçamento interno */
+    width: 15%; /* Largura fixa para as informações */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    font-size: 14px;
+    margin: 0;
+    position: static;
+    top: auto;
+    text-align: center;
+    max-width: 100%;
+    transition: transform 0.2s; /* Transição suave para hover */
+}
+
+.weather-info:hover {
+    transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+.weather-info h2 {
+    font-size: 18px; /* Aumenta o tamanho do título */
+    margin: 0 0 10px;
+    color: #333; /* Cor do texto mais escura */
+}
+
+.weather-info p {
+    margin: 5px 0;
+    color: #666; /* Cor do texto mais suave */
+}
+
+.moon-phase img {
+    width: 25px; 
+    height: auto;
+    vertical-align: middle;
+}
+
+.forecast-info {
+    background-color: #ffffff; /* Cor de fundo mais clara */
+    border: 1px solid #e0e0e0; /* Borda mais suave */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    padding: 10px; /* Aumenta o espaçamento interno */
+    margin-top: 10px; /* Espaço acima da seção */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    font-size: 14px; /* Mesma fonte */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.forecast-info h3 {
+    font-size: 18px; /* Aumenta o tamanho do título */
+    margin: 0 0 10px; /* Margem abaixo do título */
+    color: #333; /* Cor do texto mais escura */
+}
+
+.forecast-info li {
+    margin: 5px 0; /* Margem entre os itens da lista */
+    list-style-type: none; /* Remove os marcadores da lista */
+    color: #555; /* Cor do texto mais suave */
+}
+
+.weather-icon {
+    width: 50px;
+    height: auto;
+}
+
+.weather-icon-day {
+    width: 30px;
+    height: auto;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 968px) { /* Tablets */
+    .weather-info {
+        width: 40%; /* Aumenta a largura para tablets */
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+    }
+
+    .forecast-info {
+        font-size: 12px; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) { /* Celulares */
+    .weather-info {
+        width: 90%; /* Largura quase total para celulares */
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+    }
+
+    .forecast-info {
+        font-size: 10px; /* Ajusta o tamanho da fonte */
+    }
+
+    .weather-icon {
+        width: 40px; /* Reduz o tamanho do ícone */
+    }
+
+    .weather-icon-day {
+        width: 25px; /* Reduz o tamanho do ícone do dia */
+    }
+}

@@ -1,0 +1,51 @@
+.map-container {
+  height: 66vh; /* Altura do contêiner do mapa */
+  width: 100%; /* Largura total do contêiner */
+  border: 1px solid #e0e0e0; /* Borda mais suave */
+  border-radius: 6px; /* Mantém o border-radius em 6px */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave e difusa */
+  overflow: hidden;
+  background-color: #ffffff; /* Cor de fundo mais clara */
+  transition: transform 0.2s; /* Transição suave para hover */
+}
+
+.map-container:hover {
+  transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+.select-container {
+  margin: 20px; /* Margem ao redor do contêiner de seleção */
+  text-align: center; /* Centraliza o texto */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+  border: 1px solid #e0e0e0; /* Borda mais suave */
+  border-radius: 6px; /* Mantém o border-radius em 6px */
+  padding: 15px; /* Aumenta o espaçamento interno */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.ol-attribution {
+  display: none; /* Oculta a marca d'água */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) { /* Tablets */
+  .map-container {
+      height: 50vh; /* Ajusta a altura do mapa para tablets */
+      margin: 10px; /* Reduz a margem ao redor do contêiner de seleção */
+  }
+
+  .select-container {
+      margin: 15px; /* Ajusta a margem para tablets */
+  }
+}
+
+@media (max-width: 480px) { /* Celulares */
+  .map-container {
+      height: 40vh; /* Ajusta a altura do mapa para celulares */
+      margin: 5px; /* Reduz ainda mais a margem ao redor do contêiner de seleção */
+  }
+
+  .select-container {
+      margin: 10px; /* Ajusta a margem para celulares */
+  }
+}

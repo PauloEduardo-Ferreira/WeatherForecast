@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Consulta de Previsão do Tempo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação React que permite aos usuários consultar a previsão do tempo para diferentes cidades. A aplicação utiliza a API da HGbrasil para obter dados meteorológicos e exibe um mapa interativo com a localização da cidade pesquisada.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **OpenLayers**: Biblioteca para visualização de mapas.
+- **Axios**: Biblioteca para fazer requisições HTTP.
+- **Jest**: Framework de testes para JavaScript.
+- **CSS**: Para estilização da aplicação.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Pesquisa de cidades para obter a previsão do tempo.
+- Exibição de informações meteorológicas, incluindo temperatura atual, previsão para os próximos dias e fase da lua.
+- Mapa interativo que mostra a localização da cidade pesquisada.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+Para instalar e executar o projeto, siga os passos abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone o repositório**:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/PauloEduardo-Ferreira/WeatherForecast
+   cd weatherforecast
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Instale as dependências**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Inicie a aplicação**
 
-### `npm run eject`
+    ```bash
+    npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Abra o navegador**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Acesse http://localhost:3000 para ver a aplicação em funcionamento.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Uso
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Digite o nome de uma cidade no campo de busca e pressione o botão de busca.
 
-## Learn More
+2. As informações meteorológicas para a cidade serão exibidas, juntamente com um mapa mostrando a localização.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Você pode selecionar cidades previamente pesquisadas a partir do dropdown.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testes 
 
-### Code Splitting
+Para executar os testes unitários, utilize o seguinte comando:
+    ```bash
+    npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Os testes são escritos utilizando o Jest e cobrem as principais funcionalidades da aplicação.

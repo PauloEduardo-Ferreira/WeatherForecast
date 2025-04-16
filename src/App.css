@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* App.css */
+
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Cor de fundo suave */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333; /* Cor do título */
+  text-align: center; /* Centraliza o título */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #555; /* Cor do subtítulo */
+  margin: 20px 0 10px; /* Margens para o subtítulo */
+  text-align: center; /* Centraliza o subtítulo */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.select-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Para empilhar o título e o select */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 20px; /* Espaçamento superior, se necessário */
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  display: block;
+  margin: 0 auto;
+  width: 80%; /* Largura relativa para responsividade */
+  max-width: 200px; /* Largura máxima para telas grandes */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: border-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.weather-map-wrapper {
+  display: flex;
+  flex-direction: column; /* Muda para coluna em telas menores */
+  align-items: center; /* Centraliza os elementos */
+  gap: 20px; /* Espaço entre WeatherInfo e MapView */
+  max-width: 100%;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries para telas maiores */
+@media (min-width: 600px) {
+  .weather-map-wrapper {
+      flex-direction: row; /* Muda para linha em telas maiores */
   }
 }
