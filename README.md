@@ -2,6 +2,14 @@
 
 Este projeto é uma aplicação React que permite aos usuários consultar a previsão do tempo para diferentes cidades. A aplicação utiliza a API da HGbrasil para obter dados meteorológicos e exibe um mapa interativo com a localização da cidade pesquisada.
 
+# Preview:
+
+![image](https://github.com/user-attachments/assets/4a814540-44ed-4bde-9e68-658266af15e1)
+
+
+![image](https://github.com/user-attachments/assets/5ded6e15-3935-42b6-bf1e-e4e6f8c540c8)
+
+
 ## Tecnologias Utilizadas
 
 - **React**: Biblioteca para construção de interfaces de usuário.
