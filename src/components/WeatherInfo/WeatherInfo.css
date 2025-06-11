@@ -1,0 +1,100 @@
+.weather-info {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 15%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  margin: 0;
+  position: static;
+  top: auto;
+  text-align: center;
+  max-width: 100%;
+  transition: transform 0.2s;
+}
+
+.weather-info:hover {
+  transform: scale(1.02);
+}
+
+.weather-info h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.weather-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.moon-phase img {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.forecast-info {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-align: left;
+}
+
+.forecast-info h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.forecast-info li {
+  margin: 5px 0;
+  list-style-type: none;
+  color: #555;
+}
+
+.weather-icon {
+  width: 50px;
+  height: auto;
+}
+
+.weather-icon-day {
+  width: 30px;
+  height: auto;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 968px) {
+  .weather-info {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .forecast-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-info {
+    width: 90%;
+    font-size: 10px;
+  }
+
+  .forecast-info {
+    font-size: 10px;
+  }
+
+  .weather-icon {
+    width: 40px;
+  }
+
+  .weather-icon-day {
+    width: 25px;
+  }
+}
